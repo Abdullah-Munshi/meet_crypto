@@ -1,3 +1,6 @@
+import "@fontsource/viga";
+import "@fontsource/ibm-plex-sans";
+import "@fontsource/ibm-plex-sans/700.css";
 import Login from "./pages/Login";
 
 function App() {
