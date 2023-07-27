@@ -1,15 +1,36 @@
-import React from "react";
+import React, { Children } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./pages/Login";
+import RootDash from "./layout/RootDash";
+import Dashboard from "./pages/Dashboard";
+import PurchasePro from "./pages/PurchasePro";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/",
+    element: <RootDash />,
+    children: [
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "/purchasePro",
+        element: <PurchasePro />,
+      },
+      {
+        path: "/flipCoin",
+        element: <PurchasePro />,
+      },
+    ],
   },
 ]);
 
