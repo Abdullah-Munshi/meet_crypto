@@ -1,13 +1,28 @@
-import React, { Children } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./pages/Login";
 import RootDash from "./layout/RootDash";
 import Dashboard from "./pages/Dashboard";
 import PurchasePro from "./pages/PurchasePro";
+import FlipCoin from "./pages/FlipCoin";
+import Jackpot from "./pages/Jackpot";
+import PredictRpo from "./pages/PredictRpo";
+import FantasyCricket from "./pages/FantasyCricket";
+import WatchAds from "./pages/WatchAds";
+import Offerwalls from "./pages/Offerwalls";
+import TgGroup from "./pages/TgGroup";
+import Achievements from "./pages/Achievements";
+import Refer from "./pages/Refer";
+import Withdraw from "./pages/Withdraw";
+import BuyAdCredits from "./pages/BuyAdCredits";
+import Advertise from "./pages/Advertise";
+import MyReferrals from "./pages/MyReferrals";
+import TelegramAlerts from "./pages/TelegramAlerts";
+import Profile from "./pages/Profile";
 
 const router = createBrowserRouter([
   {
@@ -28,8 +43,34 @@ const router = createBrowserRouter([
       },
       {
         path: "/flipCoin",
-        element: <PurchasePro />,
+        element: <FlipCoin />,
       },
+      {
+        path: "/jackpot",
+        element: <Jackpot />,
+      },
+      {
+        path: "/predictRPO",
+        element: <PredictRpo />,
+      },
+      {
+        path: "/fantacyCricket",
+        element: <FantasyCricket />,
+      },
+      {
+        path: "/watchAds",
+        element: <WatchAds />,
+      },
+      { path: "/offerwalls", element: <Offerwalls /> },
+      { path: "/tgGroup", element: <TgGroup /> },
+      { path: "/achievements", element: <Achievements /> },
+      { path: "/refer", element: <Refer /> },
+      { path: "/withdraw", element: <Withdraw /> },
+      { path: "/buyAdCredits", element: <BuyAdCredits /> },
+      { path: "/advertise", element: <Advertise /> },
+      { path: "/myReferrals", element: <MyReferrals /> },
+      { path: "/telegramAlerts", element: <TelegramAlerts /> },
+      { path: "/profile", element: <Profile /> },
     ],
   },
 ]);
