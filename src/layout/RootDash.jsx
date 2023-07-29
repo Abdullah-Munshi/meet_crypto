@@ -11,11 +11,11 @@ const RootDash = () => {
     navigate("/dashboard");
   }, [navigate]);
   return (
-    <div className="bg-gradient-two p-8 min-h-screen">
+    <div className="bg-gradient-two p-6 min-h-screen">
       <DashboardHeader />
 
       <main
-        className="grid grid-cols-[230px_auto] bg-cover bg-center"
+        className="grid grid-cols-[230px_auto] bg-cover bg-center mb-6 rounded-bl-2xl rounded-br-2xl overflow-hidden"
         style={{ backgroundImage: `url(${dashboardBg})` }}
       >
         <SidebarDash />

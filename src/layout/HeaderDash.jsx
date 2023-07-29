@@ -13,7 +13,7 @@ const HeaderDash = () => {
 
         <div className="flex items-center justify-end space-x-4">
           {/* Wallet markup start  */}
-          <div className="flex items-center space-x-3 border-r border-[#627A90] mr-3 pr-5">
+          <div className="flex items-center space-x-3 border-r border-[#627A90] mr-[10px] pr-6">
             <div className="text-end">
               <span className="block text-white text-sm font-ibm-plex-sans font-normal">
                 Registered Wallet
