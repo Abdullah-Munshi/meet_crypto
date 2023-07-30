@@ -14,12 +14,13 @@ const RootDash = () => {
     <div className="bg-gradient-two p-6 min-h-screen">
       <DashboardHeader />
 
-      <main
-        className="grid grid-cols-[230px_auto] bg-cover bg-center mb-6 rounded-bl-2xl rounded-br-2xl overflow-hidden"
-        style={{ backgroundImage: `url(${dashboardBg})` }}
-      >
+      <main className="grid grid-cols-[230px_auto]  mb-6 rounded-bl-2xl rounded-br-2xl overflow-hidden relative">
+        <div
+          className="w-full h-full absolute top-0 start-0 bottom-0 end-0 grayscale-[50%] bg-cover bg-center rounded-bl-2xl rounded-br-2xl"
+          style={{ backgroundImage: `url(${dashboardBg})` }}
+        ></div>
         <SidebarDash />
-        <div>
+        <div className="p-6 relative z-10">
           <Outlet />
         </div>
       </main>

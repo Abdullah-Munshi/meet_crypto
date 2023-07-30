@@ -15,3 +15,11 @@ export const SVGIcon = ({ children }) => {
     </svg>
   );
 };
+
+export const TitleBase = ({ children }) => {
+  return (
+    <h4 className="text-white text-xl font-ibm-plex-sans font-bold leading-tight">
+      {children}
+    </h4>
+  );
+};
