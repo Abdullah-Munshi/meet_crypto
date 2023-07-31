@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link-primary-onhover:hover svg path {
+  fill: #f1be6b;
+}
