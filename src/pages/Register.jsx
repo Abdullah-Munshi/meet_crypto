@@ -12,7 +12,7 @@ import stepTwoImage from "../assets/step-2.png";
 import addIcon from "../assets/add.png";
 import lightRingIcon from "../assets/lightring.png";
 import PreviewUser from "../components/signin-signup/PreviewUser";
-const Login = () => {
+const Register = () => {
   return (
     <div
       className="min-h-screen bg-cover bg-center"
@@ -54,12 +54,13 @@ const Login = () => {
           <div className="text-end">
             <p className="flex items-center justify-end text-white text-base font-ibm-plex-sans font-normal">
               <img src={signInIcon} alt="Icon" className="mr-2 sm:mr-2.5" />
-              New to DexLoot?
+              Already registered?{" "}
               <Link
-                to="/register"
+                to="/login"
                 className="ml-1 hover:text-primary transition duration-200"
               >
-                Register now
+                {" "}
+                Login now
               </Link>
             </p>
           </div>
@@ -71,9 +72,9 @@ const Login = () => {
           <div className="px-4 md:px-11 lg:px-0 max-w-[850px] mx-auto">
             <div className="py-12 pt-7">
               <WelcomeTitle
-                title="Hey, Welcome back!"
-                text="Connect your wallet and click “Login” to 
-                access your dashboard."
+                title="Welcome to DexLoot"
+                text="Register into DexLoot Smart Contract for FREE. 
+A one time simple registration process."
               />
             </div>
             <div className="md:grid grid-cols-2 items-center gap-6 lg:gap-0 space-y-10 max-w-md mx-auto md:mx-0 md:max-w-none">
@@ -93,10 +94,10 @@ const Login = () => {
                   <Step
                     image={stepTwoImage}
                     title="Step 2"
-                    text="Click the button below to login"
+                    text="Register into Users Smart Contract"
                   />
                   <AccessButton opacity="opacity-30">
-                    <span>Login to dashboard </span>
+                    <span>Register for Free </span>
                     <img src={lightRingIcon} className="w-6" alt="add" />
                   </AccessButton>
                 </div>
@@ -120,4 +121,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
