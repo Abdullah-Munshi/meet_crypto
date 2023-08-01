@@ -11,6 +11,7 @@ import stepOneImage from "../assets/step-1.png";
 import stepTwoImage from "../assets/step-2.png";
 import addIcon from "../assets/add.png";
 import lightRingIcon from "../assets/lightring.png";
+import obligue from "../assets/obligue.png";
 import PreviewUser from "../components/signin-signup/PreviewUser";
 const Login = () => {
   return (
@@ -76,8 +77,13 @@ const Login = () => {
                 access your dashboard."
               />
             </div>
-            <div className="md:grid grid-cols-2 items-center gap-6 lg:gap-0 space-y-10 max-w-md mx-auto md:mx-0 md:max-w-none">
-              <div className="space-y-10">
+            <div className="md:grid grid-cols-2 items-center gap-6 lg:gap-0 space-y-10 md:space-y-0 max-w-md mx-auto md:mx-0 md:max-w-none relative">
+              <img
+                src={obligue}
+                alt="obligue"
+                className="w-[30px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 hidden md:block"
+              />
+              <div className="space-y-10 md:max-w-[350px]">
                 <div className="space-y-4">
                   <Step
                     image={stepOneImage}

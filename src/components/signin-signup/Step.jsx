@@ -8,7 +8,7 @@ const Step = ({ image, title, text }) => {
         <h4 className="text-2xl text-white font-ibm-plex-sans font-bold mb-0">
           {title}
         </h4>
-        <p className="text-base sm:text-lg text-white m-0 font-ibm-plex-sans font-normal">
+        <p className="text-base xl:text-lg text-white m-0 font-ibm-plex-sans font-normal">
           {text}
         </p>
       </div>
