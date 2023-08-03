@@ -1,4 +1,5 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 import Menu from "../components/dashboard/Menu";
 import { SVGIcon } from "../components/Utility";
 
@@ -388,9 +389,21 @@ const othersMenu = [
   },
 ];
 
-const SidebarDash = ({ onSidebarToggle }) => {
+const SidebarDash = ({ showSidebar }) => {
+  const isSmallScreen = useMediaQuery({ maxWidth: 1279 });
+  const toggleClasses = `${
+    (showSidebar && isSmallScreen) || !isSmallScreen
+      ? "-translate-x-0"
+      : "-translate-x-full"
+  }`;
+  const classes = `${
+    isSmallScreen &&
+    "fixed h-screen top-0 left-0 overflow-y-scroll transition duration-200"
+  } ${toggleClasses}`;
   return (
-    <div className="bg-[#232E38] p-5 space-y-3 xl:relative z-30 fixed xl:static  top-0 left-0 h-screen xl:h-full overflow-y-scroll xl:overflow-y-hidden">
+    <div
+      className={`bg-[#232E38] p-5 space-y-3 z-30  xl:static  xl:h-full xl:overflow-y-hidden ${classes}`}
+    >
       <Menu items={dashMenu} />
       <Menu items={decentralizedMenu} title="Decentralized Play2Win" />
       <Menu items={cashMenu} title="Earn Real Cash" />

@@ -155,7 +155,11 @@ const HeaderDash = ({ onToggleSidebar }) => {
               />
             </svg>
           </div>
-          <button className="xl:hidden" onClick={() => onToggleSidebar()}>
+          <button
+            className="xl:hidden"
+            disabled={isSmallScreen ? false : true}
+            onClick={() => onToggleSidebar()}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
