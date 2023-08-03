@@ -1,6 +1,6 @@
 import React from "react";
 import { TitleBase } from "../components/Utility";
-import TotalEstimate from "../components/dashboard/TotalEstimate";
+import TotalEstimate from "../components/dashboard/Statistics";
 import EarnImage from "../assets/addImage.png";
 import EarnBlk from "../components/dashboard/EarnBlk";
 import ContestBlk from "../components/dashboard/ContestBlk";
@@ -84,7 +84,7 @@ const contests = [
 const Dashboard = () => {
   return (
     <div className="space-y-10">
-      <div>
+      <div className="-mr-6">
         <div className="grid grid-cols-4 gap-6">
           <PromoBanner />
           <PromoBanner />
@@ -96,26 +96,29 @@ const Dashboard = () => {
         <div className="mb-6">
           <TitleBase>Dashboard</TitleBase>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 2xl:gap-6">
           <TotalEstimate
-            type={true}
             total="$10"
             text="Ad Credits %break% Balance"
+            styles={`bg-[#343143] hover:bg-[#243D31]`}
           />
           <TotalEstimate
             type={true}
             total="$500"
             text="Earnings %break% Balance"
+            styles={`bg-[#343143] hover:bg-[#243D31]`}
           />
           <TotalEstimate
             type={true}
             total="52"
             text="Referrals %break% Referred"
+            styles={`bg-[#343143] hover:bg-[#243D31]`}
           />
           <TotalEstimate
             type={true}
             total="$10"
             text="Total WON %break% in Games"
+            styles={`bg-[#343143] hover:bg-[#243D31]`}
           />
         </div>
       </div>
@@ -123,7 +126,7 @@ const Dashboard = () => {
         <div className="mb-6">
           <TitleBase>Earning Ways</TitleBase>
         </div>
-        <div className="grid grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-3 sm:gap-5 2xl:gap-6">
           {earnWay.map((item, index) => (
             <EarnBlk
               key={index}
@@ -138,7 +141,7 @@ const Dashboard = () => {
         <div className="mb-6">
           <TitleBase>100% Decentralized Play2Win Contests</TitleBase>
         </div>
-        <div className="grid grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-3 sm:gap-5 2xl:gap-6">
           {contests.map((item, index) => (
             <ContestBlk
               key={index}

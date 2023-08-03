@@ -10,7 +10,7 @@ const ContestBlk = ({ image, title, text }) => {
           className="rounded-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[150%]"
         />
       </div>
-      <div className="p-4 text-center bg-gradient-six">
+      <div className="p-4 text-center bg-gradient-six h-full">
         <h5 className="text-base_next text-[#21222C] font-ibm-plex-sans font-bold mb-1 leading-tight">
           {title}
         </h5>

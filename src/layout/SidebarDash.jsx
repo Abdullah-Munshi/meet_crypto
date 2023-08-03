@@ -388,9 +388,9 @@ const othersMenu = [
   },
 ];
 
-const SidebarDash = () => {
+const SidebarDash = ({ onSidebarToggle }) => {
   return (
-    <div className="bg-[#232E38] h-full p-5 space-y-3 relative z-10">
+    <div className="bg-[#232E38] p-5 space-y-3 xl:relative z-30 fixed xl:static  top-0 left-0 h-screen xl:h-full overflow-y-scroll xl:overflow-y-hidden">
       <Menu items={dashMenu} />
       <Menu items={decentralizedMenu} title="Decentralized Play2Win" />
       <Menu items={cashMenu} title="Earn Real Cash" />

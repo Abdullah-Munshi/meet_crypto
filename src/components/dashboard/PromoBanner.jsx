@@ -1,9 +1,13 @@
 import React from "react";
-
+import promoImage from "../../assets/promo.png";
 const PromoBanner = () => {
   return (
-    <div className="bg-[#343143] w-full h-[80px] inline-flex justify-center rounded-10 shadow-[0_3px_10px_0_rgb(0,0,0,0.10)]">
-      PromoBanner
+    <div>
+      <img
+        src={promoImage}
+        alt="promo"
+        className="rounded-10 shadow-[0_3px_10px_0_rgb(0,0,0,0.10)] w-full max-w-full"
+      />
     </div>
   );
 };

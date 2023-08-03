@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const FooterMenu = ({ items }) => {
   return (
-    <ul className="flex items-center justify-end space-x-7">
+    <ul className="flex flex-wrap items-center justify-center xl:justify-end space-x-7">
       {items.map((item, index) => (
         <li className="block" key={index}>
           <NavLink
