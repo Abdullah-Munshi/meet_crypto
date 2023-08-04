@@ -404,23 +404,27 @@ const SidebarDash = ({ showSidebar, onHideSidebar }) => {
     <div
       className={`bg-[#232E38] p-5 space-y-3 z-30  xl:static  xl:h-full xl:overflow-y-hidden ${classes}`}
     >
-      <Menu items={dashMenu} onHideSidebar={onHideSidebar} />
+      <Menu items={dashMenu} onHideSidebar={isSmallScreen && onHideSidebar} />
       <Menu
         items={decentralizedMenu}
         title="Decentralized Play2Win"
-        onHideSidebar={onHideSidebar}
+        onHideSidebar={isSmallScreen && onHideSidebar}
       />
       <Menu
         items={cashMenu}
         title="Earn Real Cash"
-        onHideSidebar={onHideSidebar}
+        onHideSidebar={isSmallScreen && onHideSidebar}
       />
       <Menu
         items={advertiseMenu}
         title="Advertisements"
-        onHideSidebar={onHideSidebar}
+        onHideSidebar={isSmallScreen && onHideSidebar}
       />
-      <Menu items={othersMenu} title="Others" onHideSidebar={onHideSidebar} />
+      <Menu
+        items={othersMenu}
+        title="Others"
+        onHideSidebar={isSmallScreen && onHideSidebar}
+      />
     </div>
   );
 };
