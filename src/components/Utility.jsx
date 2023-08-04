@@ -19,3 +19,14 @@ export const TitleBase = ({ children }) => {
     </h4>
   );
 };
+
+export const BackDrop = ({ showSidebar, onClick }) => {
+  return (
+    <div
+      onClick={onClick}
+      className={`w-screen h-screen fixed top-0 end-0 bottom-0 left-0 bg-black/60 transition duration-300 z-30 ${
+        showSidebar ? "opacity-100 visible" : "opacity-0 invisible"
+      }`}
+    />
+  );
+};

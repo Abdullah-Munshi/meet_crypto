@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Menu = ({ items, title }) => {
+const Menu = ({ items, title, onHideSidebar }) => {
   const linkStyle = ({ isActive, isPending }) => {
     const commonStyle =
       "block rounded-10 transition duration-200 text-xs_next font-ibm-plex-sans font-bold leading-tight flex items-center px-4 py-3 pl-[10px]";
@@ -19,7 +19,11 @@ const Menu = ({ items, title }) => {
       <ul className="space-y-3 ">
         {items.map((item, index) => (
           <li key={index}>
-            <NavLink to={item.path} className={linkStyle}>
+            <NavLink
+              to={item.path}
+              className={linkStyle}
+              onClick={onHideSidebar}
+            >
               {({ isActive, isPending }) => (
                 <>
                   <span className="mr-[6px]">{item.icon(isActive)}</span>

@@ -389,7 +389,7 @@ const othersMenu = [
   },
 ];
 
-const SidebarDash = ({ showSidebar }) => {
+const SidebarDash = ({ showSidebar, onHideSidebar }) => {
   const isSmallScreen = useMediaQuery({ maxWidth: 1279 });
   const toggleClasses = `${
     (showSidebar && isSmallScreen) || !isSmallScreen
@@ -404,11 +404,23 @@ const SidebarDash = ({ showSidebar }) => {
     <div
       className={`bg-[#232E38] p-5 space-y-3 z-30  xl:static  xl:h-full xl:overflow-y-hidden ${classes}`}
     >
-      <Menu items={dashMenu} />
-      <Menu items={decentralizedMenu} title="Decentralized Play2Win" />
-      <Menu items={cashMenu} title="Earn Real Cash" />
-      <Menu items={advertiseMenu} title="Advertisements" />
-      <Menu items={othersMenu} title="Others" />
+      <Menu items={dashMenu} onHideSidebar={onHideSidebar} />
+      <Menu
+        items={decentralizedMenu}
+        title="Decentralized Play2Win"
+        onHideSidebar={onHideSidebar}
+      />
+      <Menu
+        items={cashMenu}
+        title="Earn Real Cash"
+        onHideSidebar={onHideSidebar}
+      />
+      <Menu
+        items={advertiseMenu}
+        title="Advertisements"
+        onHideSidebar={onHideSidebar}
+      />
+      <Menu items={othersMenu} title="Others" onHideSidebar={onHideSidebar} />
     </div>
   );
 };
