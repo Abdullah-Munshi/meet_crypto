@@ -22,6 +22,9 @@ module.exports = {
           " linear-gradient(180deg, rgba(37, 38, 50, 0.67) 0%, #0F1D29 100%)",
         "gradient-five": "linear-gradient(180deg, #606060 0%, #1C2731 100%)",
         "gradient-six": "linear-gradient(180deg, #F6C36F 0%, #D9A757 100%)",
+        "gradient-seven": "linear-gradient(315deg, #87965C 0%, #3C3E52 100%)",
+        "gradient-eight": "linear-gradient(180deg, #39324B 0%, #31323D 100%)",
+        "gradient-nine": "linear-gradient(180deg, #F6C36F 0%, #DBA958 100%)",
       },
       borderRadius: {
         10: "0.625rem",

@@ -10,7 +10,7 @@ const RootDash = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
-    navigate("/dashboard");
+    navigate("/watchAds");
   }, [navigate]);
 
   const toggleSidebar = () => {
