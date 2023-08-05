@@ -2,6 +2,10 @@ import React from "react";
 import { TitleBase } from "../components/Utility";
 import TotalEstimate from "../components/dashboard/Statistics";
 import EarnImage from "../assets/addImage.png";
+import EarnImage2 from "../assets/addImage-2.png";
+import EarnImage3 from "../assets/addImage-3.png";
+import EarnImage4 from "../assets/addImage-4.png";
+import EarnImage5 from "../assets/addImage-5.png";
 import EarnBlk from "../components/dashboard/EarnBlk";
 import ContestBlk from "../components/dashboard/ContestBlk";
 import Contest1 from "../assets/ct-1.png";
@@ -17,7 +21,22 @@ const earnWay = [
     text: "Watch simple ads and earn real cash",
   },
   {
-    thumbnail: EarnImage,
+    thumbnail: EarnImage2,
+    title: "WATCH ADS",
+    text: "Watch simple ads and earn real cash",
+  },
+  {
+    thumbnail: EarnImage3,
+    title: "WATCH ADS",
+    text: "Watch simple ads and earn real cash",
+  },
+  {
+    thumbnail: EarnImage4,
+    title: "WATCH ADS",
+    text: "Watch simple ads and earn real cash",
+  },
+  {
+    thumbnail: EarnImage5,
     title: "WATCH ADS",
     text: "Watch simple ads and earn real cash",
   },
@@ -27,22 +46,7 @@ const earnWay = [
     text: "Watch simple ads and earn real cash",
   },
   {
-    thumbnail: EarnImage,
-    title: "WATCH ADS",
-    text: "Watch simple ads and earn real cash",
-  },
-  {
-    thumbnail: EarnImage,
-    title: "WATCH ADS",
-    text: "Watch simple ads and earn real cash",
-  },
-  {
-    thumbnail: EarnImage,
-    title: "WATCH ADS",
-    text: "Watch simple ads and earn real cash",
-  },
-  {
-    thumbnail: EarnImage,
+    thumbnail: EarnImage2,
     title: "WATCH ADS",
     text: "Watch simple ads and earn real cash",
   },
