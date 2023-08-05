@@ -10,7 +10,7 @@ const RootDash = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
-    navigate("/watchAds");
+    navigate("/purchasePro");
   }, [navigate]);
 
   const toggleSidebar = () => {

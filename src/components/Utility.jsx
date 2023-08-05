@@ -259,15 +259,71 @@ export const SVGSort = ({ width, height, fill, stroke }) => {
   );
 };
 
+export const SVGOk = ({ width, height, fill, stroke }) => {
+  return (
+    <svg
+      width={width ? width : "30"}
+      height={height ? height : "30"}
+      viewBox="0 0 30 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="15"
+        cy="15"
+        r="11.25"
+        stroke={stroke ? stroke : "#F8C571"}
+        strokeWidth="2"
+      />
+      <path
+        d="M10 15L13.75 18.75L20 11.25"
+        stroke={stroke ? stroke : "#F8C571"}
+        strokeWidth="2"
+      />
+    </svg>
+  );
+};
+
+export const SVGTimes = ({ width, height, fill, stroke }) => {
+  return (
+    <svg
+      width={width ? width : "30"}
+      height={height ? height : "30"}
+      viewBox="0 0 30 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M18 6L6 18"
+        stroke={stroke ? stroke : "#F8C571"}
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6 6L18 18"
+        stroke={stroke ? stroke : "#F8C571"}
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
 export const Button = ({ children, ...props }) => {
   return <button {...props}>{children}</button>;
 };
 
 export const FeatureBlk = ({ title, text }) => {
   return (
-    <div>
-      <h5>{title}</h5>
-      <p>{text}</p>
+    <div className="text-start pl-3 pr-2">
+      <h5 className="text-primary text-base md:text-lg font-ibm-plex-sans font-bold leading-tight mb-[5px]">
+        {title}
+      </h5>
+      <p className="text-white text-xs md:text-base font-ibm-plex-sans">
+        {text}
+      </p>
     </div>
   );
 };

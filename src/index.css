@@ -5,3 +5,27 @@
 .link-primary-onhover:hover svg path {
   fill: #f1be6b;
 }
+.compare-table > div {
+  padding: 0 3px;
+}
+.free-field,
+.pro-field {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.pro-field svg,
+.free-field svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .free-field,
+  .pro-field {
+    font-size: 21px;
+    font-weight: 600;
+  }
+}
+.free-field {
+  color: #8c859d;
+}
