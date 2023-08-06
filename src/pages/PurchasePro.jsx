@@ -1,11 +1,6 @@
 import React from "react";
 import PromoBanner from "../components/dashboard/PromoBanner";
-import {
-  TitleBase,
-  Button,
-  SVGLighting,
-  FeatureBlk,
-} from "../components/Utility";
+import { TitleBase, Button, SVGLighting } from "../components/Utility";
 import MembershipGraph from "../components/dashboard/MembershipGraph";
 import directionIcon from "../assets/direction.svg";
 import CompareFeature from "../components/dashboard/CompareFeature";

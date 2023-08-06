@@ -20,6 +20,9 @@ const MembershipGraph = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <text x="50" y="100" className="text-white">
+            $10
+          </text>
           <path
             d="M32.5817 35.6209C32.5817 35.6209 33.0251 33.2052 35.467 32.5982C35.467 32.5982 32.4131 32.3479 32.5817 35.6209Z"
             fill="white"
@@ -66,6 +69,42 @@ const MembershipGraph = () => {
             d="M140.794 101.625C142.07 101.625 143.104 100.588 143.104 99.3091C143.104 98.0303 142.07 96.9937 140.794 96.9937C139.517 96.9937 138.483 98.0303 138.483 99.3091C138.483 100.588 139.517 101.625 140.794 101.625Z"
             fill="#FC8F2B"
           />
+
+          <g className="translate-x-[20%] translate-y-[22%]">
+            <text
+              fontSize="16"
+              textAnchor="middle"
+              fill="white"
+              alignmentBaseline="central"
+              className="font-ibm-plex-sans font-bold rotate-[24deg]"
+            >
+              $10
+            </text>
+          </g>
+
+          <g className="translate-x-[42%] translate-y-[49%]">
+            <text
+              fontSize="16"
+              textAnchor="middle"
+              fill="white"
+              alignmentBaseline="central"
+              className="font-ibm-plex-sans font-bold rotate-[94deg]"
+            >
+              $5
+            </text>
+          </g>
+
+          <g className="translate-x-[24%] translate-y-[81%]">
+            <text
+              fontSize="16"
+              textAnchor="middle"
+              fill="white"
+              alignmentBaseline="central"
+              className="font-ibm-plex-sans font-bold rotate-[-29deg]"
+            >
+              $10
+            </text>
+          </g>
         </svg>
 
         <div className="absolute -top-4 left-[80%] text-white text-base font-ibm-plex-sans font-bold whitespace-nowrap pl-3 leading-tight">
