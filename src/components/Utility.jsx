@@ -327,3 +327,17 @@ export const FeatureBlk = ({ title, text }) => {
     </div>
   );
 };
+
+export const Avater = ({ image }) => {
+  return (
+    <div className="w-[132px] h-[132px] border-4 border-primary rounded-full relative z-10 mx-auto">
+      {image ? (
+        <img src={image} alt="avater" className="w-full h-full rounded-full" />
+      ) : (
+        <span className="text-[#4E5B62] text-[70px] font-ibm-plex-sans font-bold flex items-center justify-center w-full h-full rounded-full bg-[#343143]">
+          ?
+        </span>
+      )}
+    </div>
+  );
+};
