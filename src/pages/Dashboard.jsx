@@ -1,6 +1,7 @@
 import React from "react";
 import { TitleBase } from "../components/Utility";
 import TotalEstimate from "../components/dashboard/Statistics";
+import PromoCarousel from "../components/dashboard/PromoCarousel";
 import EarnImage from "../assets/addImage.png";
 import EarnImage2 from "../assets/addImage-2.png";
 import EarnImage3 from "../assets/addImage-3.png";
@@ -12,7 +13,6 @@ import Contest1 from "../assets/ct-1.png";
 import Contest2 from "../assets/ct-2.png";
 import Contest3 from "../assets/ct-3.png";
 import Contest4 from "../assets/ct-4.png";
-import PromoBanner from "../components/dashboard/PromoBanner";
 
 const earnWay = [
   {
@@ -88,13 +88,8 @@ const contests = [
 const Dashboard = () => {
   return (
     <div className="space-y-10">
-      <div className="-mr-6">
-        <div className="grid grid-cols-4 gap-6">
-          <PromoBanner />
-          <PromoBanner />
-          <PromoBanner />
-          <PromoBanner />
-        </div>
+      <div className="-mr-[36px]">
+        <PromoCarousel />
       </div>
       <div>
         <div className="mb-6">

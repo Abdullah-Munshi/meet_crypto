@@ -3,7 +3,7 @@ import { SVGLighting } from "../Utility";
 
 const GameWidget = ({ entry, win, highlight }) => {
   return (
-    <div className="grid grid-cols-2 rounded-10 relative">
+    <div className="grid grid-cols-2 rounded-10 relative slide_item mx-3">
       {highlight && (
         <span className="absolute w-8 h-8 rounded-full bg-white -right-3 -top-3 flex items-center justify-center">
           <SVGLighting width="23" height="23" stroke="#232323" />

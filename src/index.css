@@ -29,3 +29,19 @@
 .free-field {
   color: #8c859d;
 }
+.slick-arrow.slick-next {
+  display: none !important;
+}
+.slick-arrow.slick-prev {
+  left: -9px;
+  z-index: 1;
+}
+.slick-current .slide_item {
+  margin-left: 0 !important;
+}
+.slick-slider.game_carousel .slick-track {
+  padding-top: 14px;
+}
+.slick-slider.game_carousel {
+  margin-top: -14px;
+}

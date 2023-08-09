@@ -1,20 +1,15 @@
 import React from "react";
-import PromoBanner from "../components/dashboard/PromoBanner";
 import { TitleBase, Button, SVGLighting } from "../components/Utility";
 import MembershipGraph from "../components/dashboard/MembershipGraph";
 import directionIcon from "../assets/direction.svg";
 import CompareFeature from "../components/dashboard/CompareFeature";
+import PromoCarousel from "../components/dashboard/PromoCarousel";
 
 const PurchasePro = () => {
   return (
     <div className="space-y-10">
-      <div className="-mr-6">
-        <div className="grid grid-cols-4 gap-6">
-          <PromoBanner />
-          <PromoBanner />
-          <PromoBanner />
-          <PromoBanner />
-        </div>
+      <div className="-mr-[36px]">
+        <PromoCarousel />
       </div>
       <div>
         <div className="mb-6">

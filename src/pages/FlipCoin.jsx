@@ -1,32 +1,23 @@
 import React from "react";
-import PromoBanner from "../components/dashboard/PromoBanner";
 import { Avater, Button, TitleBase } from "../components/Utility";
-import GameWidget from "../components/dashboard/GameWidget";
 import CallerImage from "../assets/caller.png";
 import vs from "../assets/vs.svg";
 import { Link } from "react-router-dom";
+import PromoCarousel from "../components/dashboard/PromoCarousel";
+import GamewidgetCarousel from "../components/dashboard/GamewidgetCarousel";
 
 const FlipCoin = () => {
   return (
     <div className="space-y-10">
-      <div className="-mr-6">
-        <div className="grid grid-cols-4 gap-6">
-          <PromoBanner />
-          <PromoBanner />
-          <PromoBanner />
-          <PromoBanner />
-        </div>
+      <div className="-mr-[36px]">
+        <PromoCarousel />
       </div>
-      <div className="-mr-6">
+      <div>
         <div className="mb-6">
           <TitleBase>PvP Coin Flip Game</TitleBase>
         </div>
-        <div className="grid grid-cols-5 gap-6">
-          <GameWidget entry="5" win="8" />
-          <GameWidget entry="10" win="16" highlight={true} />
-          <GameWidget entry="100" win="108" />
-          <GameWidget entry="100" win="108" />
-          <GameWidget entry="100" win="108" />
+        <div className="-mr-[36px]">
+          <GamewidgetCarousel />
         </div>
       </div>
 
@@ -102,7 +93,7 @@ const FlipCoin = () => {
             <p className="text-base sm:text-[18px] font-ibm-plex-sans font-medium text-white mr-3 text-end leading-tight">
               Entry <br /> Fee
             </p>
-            <strong class="text-4xl sm:text-[40px] font-ibm-plex-sans font-bold leading-tight text-[#F8C571] block">
+            <strong className="text-4xl sm:text-[40px] font-ibm-plex-sans font-bold leading-tight text-[#F8C571] block">
               $5
             </strong>
           </div>

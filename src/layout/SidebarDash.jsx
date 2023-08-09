@@ -402,7 +402,7 @@ const SidebarDash = ({ showSidebar, onHideSidebar }) => {
   } ${toggleClasses}`;
   return (
     <div
-      className={`bg-[#232E38] p-5 space-y-3 z-30  xl:static  xl:h-full xl:overflow-y-hidden ${classes}`}
+      className={`bg-[#232E38] p-5 space-y-3 z-30  xl:static  xl:h-full xl:overflow-y-hidden w-[230px] ${classes}`}
     >
       <Menu items={dashMenu} onHideSidebar={isSmallScreen && onHideSidebar} />
       <Menu
