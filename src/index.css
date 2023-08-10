@@ -36,7 +36,7 @@
   left: -9px;
   z-index: 1;
 }
-.slick-current .slide_item {
+.slick-active.slick-cloned .slide_item {
   margin-left: 0 !important;
 }
 .slick-slider.game_carousel .slick-track {

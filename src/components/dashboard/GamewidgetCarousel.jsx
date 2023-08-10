@@ -10,25 +10,37 @@ const GamewidgetCarousel = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2400,
+    centerMode: true,
+    centerPadding: 150,
     nextArrow: "",
     responsive: [
       {
         breakpoint: 1500,
         settings: {
           slidesToShow: 3,
+          centerPadding: 130,
+        },
+      },
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: 150,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          centerPadding: 80,
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
+          centerPadding: 30,
         },
       },
     ],

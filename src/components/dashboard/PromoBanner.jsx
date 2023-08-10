@@ -1,7 +1,7 @@
 import React from "react";
 const PromoBanner = ({ imgUrl }) => {
   return (
-    <div className="slide_item mx-3">
+    <div className="slide_item mr-4 md:mr-6">
       <img
         src={imgUrl}
         alt="promo"
